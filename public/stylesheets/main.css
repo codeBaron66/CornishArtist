@@ -1,3 +1,42 @@
-h1{
-    color: blue;
+body{
+    height: 2000px;
+}
+.container-fluid{
+    padding: 0px;
+}
+/*NAV BAR NAV BAR NAV BAR NAV BAR NAV BAR */
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    font-family: serif;
+}
+.navbar{
+    padding: 20px 10px;
+    background-color: white;
+    opacity: 0.75;
+}
+.navbar-brand{
+    font-weight: 800;
+    font-size: 2em;
+    color: #262;
+}
+.nav-item{
+    font-weight: 800;
+    font-size: 1.4em;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #abc5bc;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#slash{
+    color: brown;
+}
+/*BODY BODY BODY BODY BODY BODY BODY BODY */
+#topImg{
+    height: 80vh;
+    width: 100vw;
 }
