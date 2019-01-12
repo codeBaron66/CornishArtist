@@ -155,7 +155,7 @@ header{
     margin-bottom: 10px;
 }
 /*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .col .link{
       width: 30%;
       display: flex;
