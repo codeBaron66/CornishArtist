@@ -55,12 +55,9 @@ p {
     margin-right: 30px;
 }
 /*NAV BAR NAV BAR NAV BAR NAV BAR NAV BAR */
-header{
-  position: absolute;
-}
 .navbar{
     background-color: white;
-    height: 9vh;
+    height: 90px;
     /*width: 95%;*/
 }
 .navbar-brand{
