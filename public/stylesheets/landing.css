@@ -1,0 +1,42 @@
+/*GLOBAL GLOBAL GLOBAL GLOBAL GLOBAL */
+body{
+    background-color: #eaf2ef;
+    color: #0d090a;
+    font-family: 'Aleo', serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.buttons{
+    color: #eaf2ef;
+    background-color: #521945;
+    padding: 10px 20px;
+    border: 1px solid #361f27;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+a:hover, .buttons{
+    color: #eaf2ef;
+}
+/*NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+.navbar{
+    background-color: #eaf2ef;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link{
+    color: #0d090a;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    padding-right: 20px;
+}
+
+/*
+colors - #912f56 pink
+         #521945 purple
+         #361f27 brown
+         #0d090a black
+         #eaf2ef white
+
+*/
