@@ -1,90 +1,54 @@
 <% include partials/header %>
-
-<main>
-  <div class="container-fluid">
-    
-    <section id="welcome">
-      <div class="row">
-        <div class="col">
-          <div id="content"><!--position absolute block??-->
-            <h1 id="name">STEPHANIE CROYDON</h1>
-            <h3 id="descr">ARTIST</h3>
-            <a href="/gallery" class="buttons">GALLERY</a>
-          </div>
-        </div>
-      </div>
-      <div class="socialIcons"> <!--Try position absolute, inline blocks??-->
-        <div class="col">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></i></a>               
-        </div>
-        <div class="col">
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>             
-        </div>
-        <div class="col">
-            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>              
-        </div>
-        <div class="col">
-            <a href="#"><i class="fab fa-medium-m fa-2x"></i></a>                
-        </div>
-        <div class="col">
-            <a href="#"><i class="fab fa-tumblr-square fa-2x"></i></a>              
-        </div>
-      </div>
-    </section>
-    
-    <section id="bio">
-      <div class="row">
-        <div class="col">
-          <p>Stephanie Croydon is a multi-disciplinary artist residing in Cornwall, UK. 
-          She is passionate about capturing inspiration from the landscape and the culture she lives in and turning it
-          into thought-provoking pieces, utilizing numerous materials for all to enjoy.</p>
-          <a class="buttons" href="/about">ABOUT STEPHANIE</a>
-        </div>
-      </div>
-    </section>
-    
-    <section id="landingGallery">
-            <!--make cards similar to jasmine knight portfolio section homepage!-->
-      <div class="card" style="width: 18rem;">
-        <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/bright-penwith_orig.jpg" class="card-img-top" alt="Artworks">
-        <div class="card-body">
-          <h5 class="card-title">OUT WEST</h5>
-          <a href="#" class="buttons">VIEW GALLERY</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/field-on-wood_1.jpg" class="card-img-top" alt="Artworks">
-        <div class="card-body">
-          <h5 class="card-title">KROWJI</h5>
-          <a href="#" class="buttons">VIEW GALLERY</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/melting-landscape-hd.jpg" class="card-img-top" alt="Artworks">
-        <div class="card-body">
-          <h5 class="card-title">BA HONS</h5>
-          <a href="#" class="buttons">VIEW GALLERY</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/chair_1.jpg" class="card-img-top" alt="Artworks">
-        <div class="card-body">
-          <h5 class="card-title">VACIVITY</h5>
-          <a href="#" class="buttons">VIEW GALLERY</a>
-        </div>
-      </div>
-      
-      <a class="buttons" href="/gallery">MAIN GALLERY</a>
-    </section>
-    
-    <section id="connect">
-      <!--try format this section without bootstrap rows etc???-->
-      <p>Connect with stephanie on social media to see latest projects, articles and art related topics. 
-      Contact Her by clicking the button below.</p>
-      <a class="buttons" href="/contact">CONTACT</a>
-    </section>
-    
-  </div>
-</main>
-
+        <main>
+            <section id="welcome">
+              <div id="headerBox">
+                <div id="content">
+                  <h2 id="name">STEPHANIE CROYDON</h2>
+                  <h4 id="descr">ARTIST</h4>
+                  <a href="/gallery" class="buttons">GALLERY</a>
+                </div>
+              </div>
+            </section>
+            
+            <section id="bio">
+              <div id="bioContent">
+                <i class="fas fa-paint-brush fa-2x"></i>
+                <p>Stephanie Croydon is a multi-disciplinary artist residing in Cornwall, UK. 
+                She is passionate about capturing inspiration from the landscape and the culture she lives in and turning it
+                into thought-provoking pieces, utilizing numerous materials for all to enjoy.</p>
+                <a class="buttons" href="/about">LEARN MORE</a>
+              </div>
+            </section>
+            
+            <section id="landingGallery">
+              <h2>PORTFOLIO</h2>
+              <div class="rowGal"> 
+              <div class="columnGal">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/20171120-143655_orig.jpg" style="width:100%">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/patchcolour_orig.jpg" style="width:100%">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/neon-land-small-wood_orig.jpg" style="width:100%">
+              </div>
+              
+              <div class="columnGal">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/20171120-143558_orig.jpg" style="width:100%">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/20171120-143757_1_orig.jpg" style="width:100%">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/20171120-143124-711_orig.jpg" style="width:100%">
+              </div> 
+               
+              <div class="columnGal">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/long-landscape1_orig.jpg" style="width:100%">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/yellowgrey_orig.jpg" style="width:100%">
+                <img src="https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/vibrant-landscape-on-wood_orig.jpg" style="width:100%">
+              </div>
+              <a class="buttons" href="/contact">VISIT GALLERY</a>
+            </section>
+            
+            <section id="connect">
+              <div id="connectContent">
+                <p>Connect with stephanie on social media to see latest projects, articles and art related topics. 
+                Contact Her by clicking the button below.</p>
+                <a class="buttons" href="/contact">CONTACT</a>
+              </div>
+            </section>
+        </main>
 <% include partials/footer %>

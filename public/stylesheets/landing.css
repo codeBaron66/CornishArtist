@@ -1,42 +1,186 @@
 /*GLOBAL GLOBAL GLOBAL GLOBAL GLOBAL */
+* {
+  box-sizing: border-box;
+}
 body{
     background-color: #eaf2ef;
     color: #0d090a;
     font-family: 'Aleo', serif;
+    /*box-sizing: border-box;*/
 }
+/*.container-fluid{*/
+/*    padding: 0;*/
+/*}*/
 a:hover{
     text-decoration: none;
 }
 .buttons{
     color: #eaf2ef;
     background-color: #521945;
-    padding: 10px 20px;
-    border: 1px solid #361f27;
-    border-radius: 5px;
+    padding: 5px 20px;
+    border: 2px solid #361f27;
     letter-spacing: 5px;
     font-weight: 400;
+    display: inline-block;
 }
-a:hover, .buttons{
+.buttons, a:hover{
     color: #eaf2ef;
 }
 /*NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
 .navbar{
     background-color: #eaf2ef;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);*/
+    border-bottom: solid 2px #912f56;
+    padding: 0 1em;
 }
 .navbar-light .navbar-brand,
 .navbar-light .navbar-nav .nav-link{
     color: #0d090a;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 5px;
     padding-right: 20px;
 }
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    color: #912f56;
+}
+/*Welcome header Welcome header*/
+#headerBox{
+    background: url("https://stephaniecroydon.weebly.com/uploads/8/5/3/7/8537069/360-view-of-trevalgan_orig.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #912f56;
+}
+#content{
+    background-color: #eaf2ef;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: 2rem;
+    padding: 30px;
+    color: #0d090a;
+    border: 2px solid #912f56;
+}
+#content h2{
+    font-size: 1.4em;
+    padding-bottom: 0.5rem;
+}
+#content h4{
+    font-size: 1.1em;
+    color: grey;
+    padding-bottom: 0.7rem;
+}
+/*BIO BIO BIO BIO BIO BIO BIO BIO */
+#bio{
+    min-height: 65vh;
+    width: 45%; /*make wider on smaller screens*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fas{
+    margin-bottom: 20px;
+}
+#bioContent{
+    letter-spacing: 2px;
+    line-height: 1.9rem;
+    margin-top: 20%;
+    background-color: #eaf2ef;
+    padding: 30px;
+    color: #0d090a;
+}
+#bioContent a{
+    margin-top: 10px;
+}
+/*LANDING GALLERY LANDING GALLERY LANDING GALLERY  */
+#landingGallery{
+    min-height: 70vh;
+    width: 100%;
+    text-align: center;
+    /*border-bottom: 2px solid #912f56;*/
+}
+#landingGallery h2{
+    padding-bottom: 40px;
+}
+.rowGal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.columnGal {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
 
+.columnGal img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+#landingGallery a{
+    margin: 40px auto;
+}
+#lineBreak{
+    background-color: #912f56;
+    height: 2px;
+    width: 70%;
+}
+/*CONNECT CONNECT CONNECT CONNECT CONNECT */
+#connect{
+    min-height: 45vh;
+    width: 45%; /*make wider on smaller screens*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#connectContent{
+    letter-spacing: 2px;
+    line-height: 1.9rem;
+    margin-top: 20%;
+    background-color: #eaf2ef;
+    padding: 30px;
+    color: #0d090a;
+}
+/*FOOTER FOOTER FOOTER FOOTER FOOTER */
+#main-footer{
+    background-color: #0d090a;
+    min-height: 35vh;
+    color: #eaf2ef;
+    text-align: center;
+    letter-spacing: 2px;
+    /*line-height: 1.9rem;*/
+}
+#footerContent{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fab{
+    color: #912f56;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+/*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+@media (max-width: 800px) {
+  .columnGal {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 /*
 colors - #912f56 pink
          #521945 purple
          #361f27 brown
          #0d090a black
          #eaf2ef white
-
 */
