@@ -1,5 +1,52 @@
 <% include partials/header %>
 
-<h1>CONTACT</h1>
+<section id="contactSection">
+    <div id="contactContent">
+        
+        <div id="contactHeader">
+            <div class="lineContainer">
+                <div class="line"></div>
+            </div>
+            <div>
+                <p> CONTACT STEPHANIE</p>
+            </div>
+            <div class="lineContainer">
+                <div class="line"></div>
+            </div>
+        </div>
+        
+        <div id="">
+            <form id="contactForm" action="/" method="POST">
+                <div class="input-row">
+                    <div class="labels">
+                        <label id="name-label "for="name">Your Name: </label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required autofocus id="name" class="input-field" name="name" placeholder="Full Name">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="labels">
+                        <label id="email-label "for="email">Email: </label>
+                    </div>
+                    <div class="input-data">
+                        <input type="email" required id="email" class="input-field" name="email" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="labels">
+                        <label id="message-label "for="message">Message: </label>
+                    </div>
+                    <div class="input-data">
+                        <textarea id="input-area" name="comments" placeholder="Message..."></textarea>
+                    </div>
+                </div>
+                <!--<div id="submitDiv">-->
+                    <button id="submitButton" class="buttons" type="submit">SEND</button>
+                <!--</div>-->
+            </form>
+        </div>
+    </div>
+</section>
 
 <% include partials/footer %>
