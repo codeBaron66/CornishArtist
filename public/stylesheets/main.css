@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #eaf2ef;
     color: #0d090a;
@@ -27,6 +30,14 @@ a:hover{
 .buttons, a:hover{
     color: #eaf2ef;
 }
+.fa-arrow-up{
+    bottom: 15px;
+    right: 40px;
+    position: fixed;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 50%;
+}
 /*LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
 /*NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
 .navbar{
@@ -47,117 +58,22 @@ a:hover{
     color: #912f56;
 }
 /*Welcome header Welcome header*/
-#headerBox{
-    background: url("https://news.files.bbci.co.uk/include/shorthand/40076/media/sea-l_gbqwvrs-mr_4pkq6di.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+
+/*FOOTER FOOTER FOOTER FOOTER FOOTER */
+#main-footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #912f56;
-}
-#content{
-    background-color: #eaf2ef;
-    text-align: center;
-    letter-spacing: 7px;
-    line-height: 2rem;
-    padding: 30px;
-    color: #0d090a;
-    border: 2px solid #912f56;
-}
-#content h2{
-    font-size: 1.4em;
-    padding-bottom: 0.5rem;
-}
-#content h4{
-    font-size: 1.1em;
-    color: grey;
-    padding-bottom: 0.7rem;
-}
-/*BIO BIO BIO BIO BIO BIO BIO BIO */
-#bio{
-    min-height: 45vh;
-    width: 45%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.fas{
-    margin-bottom: 30px;
-}
-#bioContent{
-    letter-spacing: 2px;
-    line-height: 1.9rem;
-    margin-top: 20%;
-    background-color: #eaf2ef;
-    padding: 30px;
-    color: #0d090a;
-}
-#bioContent a{
-    margin-top: 10px;
-}
-/*LANDING GALLERY LANDING GALLERY LANDING GALLERY  */
-#landingGallery{
-    min-height: 70vh;
-    width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    /*border-bottom: 2px solid #912f56;*/
-}
-.rowGal {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.columnGal {
-  flex: 33.3%;
-  max-width: 33.3%;
-  padding: 0 4px;
-}
-
-.columnGal img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-#landingGallery a{
-    margin: 40px auto;
-}
-#lineBreak{
-    background-color: #912f56;
-    height: 2px;
-    width: 70%;
-}
-/*CONNECT CONNECT CONNECT CONNECT CONNECT */
-#connect{
-    min-height: 45vh;
-    width: 45%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-#connectContent{
-    letter-spacing: 2px;
-    line-height: 1.9rem;
-    margin-top: 20%;
-    background-color: #eaf2ef;
-    padding: 30px;
-    color: #0d090a;
-}
-/*FOOTER FOOTER FOOTER FOOTER FOOTER */
-#main-footer{
     background-color: #0d090a;
     min-height: 35vh;
+    max-width: 100vw;
     color: #eaf2ef;
-    text-align: center;
-    letter-spacing: 2px;
-    /*line-height: 1.9rem;*/
 }
 #footerContent{
-    /*width: 50%;*/
-    /*margin: 0 auto;*/
-    padding: 90px;
+    text-align: center;
+}
+#footerContent p{
+    margin: 0;
 }
 .socialIcons{
     display: flex;
@@ -167,7 +83,7 @@ a:hover{
 .fab{
     color: #912f56;
     margin-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 /*GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
 
