@@ -179,7 +179,35 @@ body.sidebar-active #sidebar {
 /*GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
 
 /*ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT */
-
+#about-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-wrapper{
+    width: 70vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaf2ef;
+}
+#about-pic-wrapper{
+    width: 35vw;
+    height: 75vh;
+}
+#about-pic{
+    max-width: 100%;
+    height: auto;
+}
+#about-textArea{
+    text-align: center;
+}
+#about-title, h1{
+    border-left: 2px solid #959d9a;
+}
 /*SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP */
 
 /*CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
