@@ -11,9 +11,12 @@ body{
     background-color: #020202;
     color: #0d090a;
     font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 a{
     color: #eaf2ef;
+    text-decoration: none;
 }
 a:hover{
     text-decoration: none;
@@ -111,7 +114,11 @@ body.sidebar-active #sidebar {
     color: #8a8e8d;
 }
 /*Welcome header Welcome header*/
-#wrapper{
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#landing-wrapper{
     background-color: #0d090a;
     height: 100vh;
     display: flex;
@@ -152,7 +159,7 @@ body.sidebar-active #sidebar {
 #landing-name h3 {
     color: #959d9a;
     display: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 #short-bio{
     text-align: center;
@@ -164,7 +171,6 @@ body.sidebar-active #sidebar {
 .landingBtns{
     margin-right: 30px;
 }
-
 #landing-picArea{
     background: url('https://dumielauxepices.net/sites/default/files/drawn-black-cat-abstract-514614-3152519.jpg');
     background-position: center;
@@ -174,7 +180,39 @@ body.sidebar-active #sidebar {
     width: 40vw;
     height: 100vh;
 }
-
+/*Landing-about-section Landing-about-section Landing-about-section */
+#l-about-wrapper{
+    /*height: 80vh;*/
+    min-height: 80vh; /*Need this??*/
+    color: #0d090a;
+    background-color: #cccccc;
+    box-sizing: border-box; /*Need this??*/
+}
+#l-about-content{
+    width: 1000px;
+    margin: 10% auto;
+}
+#circle{
+    width: 350px;
+    height: 350px;
+    background: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/35386867_10160560157235302_4587852970023976960_n.jpg?_nc_cat=103&_nc_ht=scontent-lhr3-1.xx&oh=4e748cb8d09e8cee3e525620098ee388&oe=5CFBA7EF');
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+}
+#l-about-content h1{
+    font-size: 4rem;
+}
+.l-about-span{
+    color: #2fb634;
+    font-size: 4.1rem;
+}
+#l-links{
+    height: 100vh;
+    background-color: #2fb634;
+}
 /*FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 /*GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
@@ -323,6 +361,21 @@ body.sidebar-active #sidebar {
     .landingBtns{
         margin-right: 10px;
     }
+    #l-about-content{
+        width: 95vw;
+    }
+    #circle{
+        float: none;
+        margin: 0 auto;
+    }
+    #l-about-content h1{
+        padding-top: 50px;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .l-about-span{
+        font-size: 3.1rem;
+    }
 }
 @media (max-width: 790px) {
     #landing-name h1{
@@ -336,7 +389,17 @@ body.sidebar-active #sidebar {
     }
     .landingBtns{
         margin-bottom: 15px;
-    }   
+    }
+    #circle{
+        width: 300px;
+        height: 300px;
+    }
+    #l-about-content h1{
+        font-size: 2.5rem;
+    }
+    .l-about-span{
+        font-size: 2.6rem;
+    }
 }
 @media (max-width: 600px) {
     #landing-textArea {
@@ -349,15 +412,15 @@ body.sidebar-active #sidebar {
     }
     #landing-name {
         border-right: 0;
-        border-bottom: 2px solid #959d9a;
     }
     #landing-name h1 {
         font-size: 2rem;
         letter-spacing: normal;
-        padding-right: 20px;
+        padding-right: 10px;
     }
     #landing-name h3 {
         display: block;
+        margin-top: 25px;
     }
     #short-bio p{
     color: #020202;
