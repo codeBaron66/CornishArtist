@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #020202;
+    background-color: #cccccc;
     color: #0d090a;
     font-family: 'Work Sans', sans-serif;
     padding: 0;
@@ -44,6 +44,11 @@ a.white{
 }
 .white, a:hover{
     color: #2fb634; 
+}
+.fade-div{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
 }
 /*LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
 
@@ -114,23 +119,17 @@ body.sidebar-active #sidebar {
     color: #8a8e8d;
 }
 /*Welcome header Welcome header*/
-#container{
-    display: flex;
-    flex-direction: column;
-}
+/*#container{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 #landing-wrapper{
-    background-color: #0d090a;
-    height: 100vh;
+    color: #020202;
+    background-color: #fcfcfe;
+    height: 80vh;
     display: flex;
-}
-#landing-textArea{
-    background-color: #020202;
-    width: 60vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    color: #eaf2ef;
+    justify-content: center;
 }
 #textArea-content{
     width: 40vw;
@@ -176,23 +175,17 @@ body.sidebar-active #sidebar {
 .landingBtns{
     margin-right: 30px;
 }
-#landing-picArea{
-    background: url('https://dumielauxepices.net/sites/default/files/drawn-black-cat-abstract-514614-3152519.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0d090a;
-    width: 40vw;
-    height: 100vh;
-}
 .buttons.green.landing{
     font-size: 1.3rem;
 }
+#top-fade-div{
+    background-image: linear-gradient(#fcfcfe, #CAD9E3);
+}
 /*Landing-about-section Landing-about-section Landing-about-section */
 #l-about-wrapper{
-    min-height: 80vh;
+    min-height: 60vh;
     color: #0d090a;
-    background-color: #cccccc;
+    background-image: linear-gradient(#CAD9E3, #B2CBDB);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,17 +212,24 @@ body.sidebar-active #sidebar {
     color: #2fb634;
     font-size: 4.1rem;
 }
+#l-about-fade-div{
+    background-image: linear-gradient(#B2CBDB, #B2D6ED);
+}
 /*Landing Gallery Landing Gallery Landing Gallery */
 #landingGallery{
     min-height: 70vh;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    background-image: linear-gradient(#B2D6ED, #A6D8F7);
 }
 .rowGal {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 4px;
+}
+.rowGal img{
+    border: 2px solid black;
 }
 .columnGal {
   flex: 33.3%;
@@ -256,13 +256,18 @@ body.sidebar-active #sidebar {
 }
 #l-contact{
     min-height: 70vh;
-    background-image: linear-gradient(#a6a6a6, #8c8c8c);
+    background-image: linear-gradient(#A6D8F7, #8BC5E8);
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 #l-contact-content{
-    margin: 60px 30px;
+    padding: 60px 30px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 7px 7px 15px grey;
+    background-image: linear-gradient(#9DD2F2, #93C6E6);
 }
 #l-contact h1{
     font-size: 3rem;
@@ -298,7 +303,7 @@ body.sidebar-active #sidebar {
     width: 100%;
 }
 #l-links-section{
-    background-image: linear-gradient(#ccc, #b3b3b3);
+    background-image: linear-gradient(#A6D8F7, #8BC5E8);
 }
 #l-links{
     min-height: 40vh;
@@ -342,6 +347,7 @@ body.sidebar-active #sidebar {
 /*Footer Footer Footer Footer Footer*/
 footer{
     height: 30vh;
+    background-image: linear-gradient(#8BC5E8, #0E69A1);
     text-align: center;
     color: #eaf2ef;
     display: flex;
