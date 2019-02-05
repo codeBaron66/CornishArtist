@@ -249,50 +249,20 @@ body.sidebar-active #sidebar {
     height: 2px;
     width: 70%;
 }
-/*Landing links Landing links Landing links */
-#l-links{
-    min-height: 80vh;
-    background-color: #cccccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*Landing links and contact Landing links and contact */
+#contact-links{
+    display: grid;
+    grid-template-columns: auto auto;
 }
-#l-links div{
-    height: 400px;
-    width: 400px;
-    background-color: green;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 50%;
-    margin-right: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.8rem;
-    font-weight: bold;
-}
-#l-links a{
-    color: black;
-    background-color: white;
-}
-#etsy{
-    background: url('https://i.etsystatic.com/11758165/r/il/ecfad7/849678333/il_570xN.849678333_ajm2.jpg');
-}
-#fabric{
-    background: url('https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0668/6633/rrsymbol_white_shop_thumb.png');
-}
-#zine{
-    background: url('https://i0.wp.com/punkymoms.com/wp-content/uploads/2017/11/trump2.jpg?resize=678%2C381&ssl=1');
-}
-/*Landing Contact Landing Contact Landing Contact */
 #l-contact{
-    min-height: 50vh;
-    background-color: #cccccc;
+    min-height: 70vh;
+    background-image: linear-gradient(#a6a6a6, #8c8c8c);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 #l-contact-content{
-    margin: 30px;
+    margin: 60px 30px;
 }
 #l-contact h1{
     font-size: 3rem;
@@ -326,6 +296,48 @@ body.sidebar-active #sidebar {
     border: 0;
     display: block;
     width: 100%;
+}
+#l-links-section{
+    background-image: linear-gradient(#ccc, #b3b3b3);
+}
+#l-links{
+    min-height: 40vh;
+    /*background-color: #cccccc;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#l-links-h1{
+    min-height: 5vh;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 55px;
+}
+#l-links div{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#l-links a{
+    color: black;
+    background-color: white;
+}
+#etsy{
+    background: url('https://i.etsystatic.com/11758165/r/il/ecfad7/849678333/il_570xN.849678333_ajm2.jpg');
+}
+#fabric{
+    background: url('https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0668/6633/rrsymbol_white_shop_thumb.png');
+}
+#zine{
+    background: url('https://i0.wp.com/punkymoms.com/wp-content/uploads/2017/11/trump2.jpg?resize=678%2C381&ssl=1');
 }
 /*Footer Footer Footer Footer Footer*/
 footer{
@@ -463,13 +475,16 @@ footer p{
         padding: 50px 70px 0 50%;
     }
     #l-links div{
-        height: 250px;
-        width: 250px;
+        height: 180px;
+        width: 180px;
         margin-right: 60px;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 @media (max-width: 1320px) {
+    #contact-links{
+        grid-template-columns: auto;
+    }
     #about-picArea{
         width: 500px;
         height: 100vh;
@@ -534,10 +549,10 @@ footer p{
     .landingBtns{
         margin-bottom: 15px;
     }
-    #circle{
-        width: 300px;
-        height: 300px;
-    }
+    /*#circle{*/
+    /*    width: 200px;*/
+    /*    height: 300px;*/
+    /*}*/
     #l-about-content h1{
         font-size: 2.5rem;
     }
