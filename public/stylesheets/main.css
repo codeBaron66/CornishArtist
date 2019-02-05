@@ -291,12 +291,12 @@ body.sidebar-active #sidebar {
     align-items: center;
     flex-direction: column;
 }
+#l-contact-content{
+    margin: 30px;
+}
 #l-contact h1{
     font-size: 3rem;
     margin-bottom: 30px;
-}
-#l-contact form{
-    
 }
 #l-contact input{
     font-family: 'Work Sans', sans-serif;
