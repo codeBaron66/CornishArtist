@@ -160,6 +160,7 @@ body.sidebar-active #sidebar {
     color: #959d9a;
     display: none;
     font-size: 1.2rem;
+    font-style: italic;
 }
 #short-bio{
     text-align: center;
@@ -179,6 +180,9 @@ body.sidebar-active #sidebar {
     background-color: #0d090a;
     width: 40vw;
     height: 100vh;
+}
+.buttons.green.landing{
+    font-size: 1.3rem;
 }
 /*Landing-about-section Landing-about-section Landing-about-section */
 #l-about-wrapper{
@@ -202,6 +206,7 @@ body.sidebar-active #sidebar {
     border-radius: 50%;
     float: left;
     margin-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #l-about-content h1{
     font-size: 4rem;
@@ -210,17 +215,12 @@ body.sidebar-active #sidebar {
     color: #2fb634;
     font-size: 4.1rem;
 }
-#l-links{
-    height: 100vh;
-    background-color: #2fb634;
-}
 /*Landing Gallery Landing Gallery Landing Gallery */
 #landingGallery{
     min-height: 70vh;
     width: 95%;
     margin: 0 auto;
     text-align: center;
-    /*border-bottom: 2px solid #912f56;*/
 }
 .rowGal {
   display: flex;
@@ -245,8 +245,57 @@ body.sidebar-active #sidebar {
     height: 2px;
     width: 70%;
 }
-/*FOOTER FOOTER FOOTER FOOTER FOOTER */
-
+/*Landing links Landing links Landing links */
+#l-links{
+    min-height: 80vh;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#l-links div{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+#l-links a{
+    color: black;
+    background-color: white;
+}
+#etsy{
+    background: url('https://i.etsystatic.com/11758165/r/il/ecfad7/849678333/il_570xN.849678333_ajm2.jpg');
+}
+#fabric{
+    background: url('https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0668/6633/rrsymbol_white_shop_thumb.png');
+}
+#zine{
+    background: url('https://i0.wp.com/punkymoms.com/wp-content/uploads/2017/11/trump2.jpg?resize=678%2C381&ssl=1');
+}
+/*Footer Footer Footer Footer Footer*/
+footer{
+    height: 30vh;
+    text-align: center;
+    color: #eaf2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#footer-icons i{
+    color: #2aa22e;
+    margin: 0 30px 30px 0;
+}
+footer p{
+    margin-bottom: 30px;
+}
 /*GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
 
 /*ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT */
@@ -303,7 +352,6 @@ body.sidebar-active #sidebar {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 #contactContent{
     width: 55vw;
@@ -366,6 +414,12 @@ body.sidebar-active #sidebar {
     #about-textArea{
         padding: 50px 70px 0 50%;
     }
+    #l-links div{
+        height: 250px;
+        width: 250px;
+        margin-right: 60px;
+        font-size: 2rem;
+    }
 }
 @media (max-width: 1320px) {
     #about-picArea{
@@ -411,6 +465,12 @@ body.sidebar-active #sidebar {
     .columnGal {
         flex: 100%;
         max-width: 100%;
+    }
+    #l-links{
+    flex-direction: column;
+    }
+    #l-links div{
+        margin: 20px 0;
     }
 }
 @media (max-width: 790px) {
