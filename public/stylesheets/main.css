@@ -165,6 +165,10 @@ body.sidebar-active #sidebar {
 #short-bio{
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Charm', cursive;
+    font-size: 1.3rem;
+    /*font-style: italic;*/
+    letter-spacing: 1px;
 }
 #short-bio p{
     color: #959d9a;
@@ -279,6 +283,50 @@ body.sidebar-active #sidebar {
 #zine{
     background: url('https://i0.wp.com/punkymoms.com/wp-content/uploads/2017/11/trump2.jpg?resize=678%2C381&ssl=1');
 }
+/*Landing Contact Landing Contact Landing Contact */
+#l-contact{
+    min-height: 50vh;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#l-contact h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+#l-contact form{
+    
+}
+#l-contact input{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    /*border: 1px solid grey;*/
+}
+#l-contact textarea{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    display: block;
+}
+#submit-button{
+    padding: 8px 25px;
+    color: #eaf2ef;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-image: linear-gradient(#2aa22e, #1f7a22);
+    border-radius: 10px;
+    border: 0;
+    display: block;
+    width: 100%;
+}
 /*Footer Footer Footer Footer Footer*/
 footer{
     height: 30vh;
@@ -346,69 +394,69 @@ footer p{
 /*SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP */
 
 /*CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
-#contactSection{
-    width: 100vw;
-    min-height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#contactContent{
-    width: 55vw;
-    padding-top: 100px;
-    margin: 0 auto 0 auto;
-    display: grid;
-    grid-template-rows: auto auto;
-    background-color: #eaf2ef;
-}
-#contactHeader{
-    display: flex;
-    color: #0d090a;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-}
-.lineContainer{
-    height: 36px;
-    display: grid;
-    align-items: center;
-    flex: 8;
-}
-.line{
-    height: 2px;
-    width: inherit;
-    background-color: #912f56;
-    align-self: center;
-}
-#contactForm{
-    width: 50%;
-    margin: 30px auto;
-    letter-spacing: 2px;
-}
-.input-row{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    margin-bottom: 30px;
-}
-.labels{
-    text-align: right;
-}
-.input-field{
-    width: 100%;
-    margin-left: 10px;
-}
-#input-area{
-    margin-left: 10px;
-    width: 100%;
-    height: 120px;
-}
+/*#contactSection{*/
+/*    width: 100vw;*/
+/*    min-height: 65vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*#contactContent{*/
+/*    width: 55vw;*/
+/*    padding-top: 100px;*/
+/*    margin: 0 auto 0 auto;*/
+/*    display: grid;*/
+/*    grid-template-rows: auto auto;*/
+/*    background-color: #eaf2ef;*/
+/*}*/
+/*#contactHeader{*/
+/*    display: flex;*/
+/*    color: #0d090a;*/
+/*    font-size: 1.5rem;*/
+/*    letter-spacing: 5px;*/
+/*}*/
+/*.lineContainer{*/
+/*    height: 36px;*/
+/*    display: grid;*/
+/*    align-items: center;*/
+/*    flex: 8;*/
+/*}*/
+/*.line{*/
+/*    height: 2px;*/
+/*    width: inherit;*/
+/*    background-color: #912f56;*/
+/*    align-self: center;*/
+/*}*/
+/*#contactForm{*/
+/*    width: 50%;*/
+/*    margin: 30px auto;*/
+/*    letter-spacing: 2px;*/
+/*}*/
+/*.input-row{*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 4fr;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+/*.labels{*/
+/*    text-align: right;*/
+/*}*/
+/*.input-field{*/
+/*    width: 100%;*/
+/*    margin-left: 10px;*/
+/*}*/
+/*#input-area{*/
+/*    margin-left: 10px;*/
+/*    width: 100%;*/
+/*    height: 120px;*/
+/*}*/
 /*#submitDiv{*/
 /*    width: 100%;*/
 /*}*/
-#submitButton{
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-}
+/*#submitButton{*/
+/*    display: block;*/
+/*    margin: 0 auto;*/
+/*    cursor: pointer;*/
+/*}*/
 /*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 @media (max-width: 1455px) {
     #about-textArea{
