@@ -180,6 +180,23 @@ body.sidebar-active #sidebar {
 }
 #top-fade-div{
     background-image: linear-gradient(#fcfcfe, #CAD9E3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-fade-div .fas{
+    animation: down 3s linear infinite;
+}
+@keyframes down{
+    0% {
+      color: #fcfcfe;  
+    }
+    50% {
+        color: #CAD9E3;
+    }
+    100% {
+        color: #fcfcfe;
+    }
 }
 /*Landing-about-section Landing-about-section Landing-about-section */
 #l-about-wrapper{
