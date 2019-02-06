@@ -136,6 +136,7 @@ body.sidebar-active #sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #landing-social-icons{
     margin-bottom: 40px;
@@ -143,6 +144,15 @@ body.sidebar-active #sidebar {
 #landing-social-icons .fab{
     color: #2aa22e;
     margin-right: 30px;
+    animation: textArea 1s linear;
+}
+@keyframes textArea{
+    0%{
+        margin-right: 0px;
+    }
+    100%{
+        margin-right: 30px;
+    }
 }
 #landing-name{
     margin-bottom: 40px;
@@ -174,6 +184,15 @@ body.sidebar-active #sidebar {
 }
 .landingBtns{
     margin-right: 30px;
+    animation: socialIconsAnimation 1s linear;
+}
+@keyframes socialIconsAnimation{
+    0%{
+        font-size: 0.7rem;
+    }
+    100%{
+        font-size: inherit;
+    }
 }
 .buttons.green.landing{
     font-size: 1.3rem;
@@ -320,7 +339,7 @@ body.sidebar-active #sidebar {
     width: 100%;
 }
 #l-links-section{
-    background-image: linear-gradient(#A6D8F7, #8BC5E8);
+    background-image: linear-gradient(#F6D8F7, #8BC5E8);
 }
 #l-links{
     min-height: 40vh;
@@ -373,7 +392,7 @@ footer{
     flex-direction: column;
 }
 #footer-icons i{
-    color: #2aa22e;
+    color: #71da75;
     margin: 30px 30px 30px 0;
 }
 footer p{
@@ -507,6 +526,11 @@ footer p{
 @media (max-width: 1320px) {
     #contact-links{
         grid-template-columns: auto;
+    }
+    #l-contact-content{
+        border: 0;
+        box-shadow: none;
+        background-color: inherit;
     }
     #about-picArea{
         width: 500px;
